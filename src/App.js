@@ -18,7 +18,7 @@ state = {
   clickMessage
 };
 
-setClick = id => {
+setClicked = id => {
   // copy of the state matches array to work with
   const matches = this.state.matches;
 
@@ -65,7 +65,7 @@ matches.sort(function(a, b){return 0.5 - Math.random()});
 this.setState({ matches });
 this.setState({ correctGuesses });
 this.setState({ clickMessage });
-  }else {
+  } else {
 
 // set its value to be true
 clickedMatch[0].clicked = true;
@@ -103,7 +103,7 @@ render() {
   
   
   <h3 className="scoreSummary card-header">
-    Correct Guesses: {this.state.correctGuess} 
+    Correct Guesses: {this.state.correctGuesses} 
     <br /> Best Score: {this.state.bestScore}
     </h3>
 
