@@ -75,66 +75,50 @@ correctGuess = 0;
 
 // encourage to play again
 clickMessage = "Fantastic!!! You got them ALL!!! Let's play again!";
+bestScore = 12;
+this.setState({ bestScore });
 
+for (let i = 0 ; i < matches.length ; i++) {
+  matches[i].clicked = false;
+}
+// This will shuffle the array and get the random order
+matches.sort(function(a, b){return 0.5 - Math.random()});
 
-
-
-
-
+// Set this.state.matches will equal the new matches 
+this.setState({ matches });
+this.setState({ correctGuess });
+this.setState({ clickMessage });
 
   }
 
-
-
-
-
-
-
-
-
-
-
-
-
-}
-
-
-
-
 };
 
-
-
-
-
-
-
-
-
-
-
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
+render() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+<Wrapper>
+  <Title>Drinky Clicky Game</Title>
+  <h3 className="score">{this.state.clickMessage}</h3>
+  <h3 className="score card-header">Correct Guesses: {this.state.correctGuess} <br /> Best Score: {this.state.bestScore}</h3>
+<div className="container">
+<div className="row">
+  {this.state.matches.map(match => (
+    <IdCard
+    setclicked={this.setclicked}
+    id={match.id}
+    key={match.id}
+    image={match.image}
+/>
+
+))}
+</div>  
+</div>
+
+</Wrapper>
+
   );
 }
+
+}
+
 
 export default App;
