@@ -27,8 +27,10 @@ Clicky Game is a memory game using React. This application's UI is divided into 
 
 * ES6
 
-### Drinky Clicky React Game
 
-<a href="https://protected-meadow-77050.herokuapp.com/">Drinky Clicky Game Application</a>
+
+
+
+<a href="https://protected-meadow-77050.herokuapp.com/">## Drinky Clicky React Game Application</a>
 
 <img width="400" height="300" src="https://github.com/JohannaCasimirMahoney/Clicky-Game/blob/master/Screen%20Shot%202019-07-27%20at%2012.21.13%20PM.png">
