@@ -1,7 +1,7 @@
 import React from "react";
-import "./MatchCard.css";
+import "./DrinkCard.css";
 
-const MatchCard = props => (
+const DrinkCard = props => (
     <div onClick={() => props.setClicked(props.id)} className="card col-md-3">
     <div className="img-container">
         <img alt={props.name} src={props.image} />
@@ -11,4 +11,4 @@ const MatchCard = props => (
     </div>
 );
 
-export default MatchCard;
+export default DrinkCard;
