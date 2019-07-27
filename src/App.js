@@ -51,7 +51,7 @@ setClicked = id => {
     // this will increase the corrent amount
     correctGuesses++;
 
-    clickMessage = "Awesome! You have not click on that drink yet! Don't stop now!";
+    clickMessage = "Looking Good! You have not click on that drink yet! Don't stop now!";
 
     if (correctGuesses > bestScore) {
       bestScore = correctGuesses;
