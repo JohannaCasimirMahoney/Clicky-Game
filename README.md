@@ -28,4 +28,4 @@ Clicky Game is a memory game using React. This application's UI is divided into 
 * ES6
 
 
-<img width="400" height="400" src="https://github.com/JohannaCasimirMahoney/Clicky-Game/blob/master/Screen%20Shot%202019-07-27%20at%2012.21.13%20PM.png">
+<img width="500" height="400" src="https://github.com/JohannaCasimirMahoney/Clicky-Game/blob/master/Screen%20Shot%202019-07-27%20at%2012.21.13%20PM.png">
